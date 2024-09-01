@@ -1,0 +1,130 @@
+.banner_img{
+    width: 100%;
+    height: 500px;
+    background: url(../img/banner.jpg) no-repeat center center / cover fixed;
+}
+.main_index{
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.main_intex_title{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: left;
+    color: var(--ColoresBotones);
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    background-color: rgb(245, 172, 123, 10%);
+    border: 1px  solid #CCC;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 20px);
+}
+.card_info{
+    padding: 10px;
+    text-align: center;
+}
+.card_img{
+    background-color: #ddd;
+    width: 100%;
+}
+.card_img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card_name{
+    font-size: 1.2em;
+    margin: 30px 0 10px 0;
+}
+.card_detail{
+    font-size: 0.9em;
+    color: #667;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.card_buttom{
+background-color: var(--ColoresBotones);
+color:#fff;
+margin-top: 5px;
+border: none;
+padding:10px 20px;
+border-radius: 4px;
+cursor: ponter;
+font-weight: bold;
+&:hover{
+    background-color: #f8f8f8;
+    color: var(--ColoresBotones);
+    outline: 2px solid var(--ColoresBotones); 
+}
+}
+
+.icono-wtp{
+    position: fixed;
+    width: 50px;
+    color: green;
+    bottom: 2%;
+    left: 4%;
+    z-index: 10;
+    transition: all 0.2s ease;
+    &:hover{
+        cursor: pointer;
+        width: 55px;
+        transform: rotate(10deg)
+    }
+}
+.hidden {
+    display: none;
+}
+
+#adoption-form-container {
+    /* Estilos para el contenedor del formulario */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 20px auto;
+    position: relative;
+}
+#close-button {
+    background-color: red;
+    border: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/* Tamaño Tablet (768px) */
+@media (max-width: 768px){
+    .banner_img{
+        height: 400px;
+        background-position: center top;
+    }
+
+    .card{
+        width: 45%;
+    }
+}
+
+/*Tamaño Celulares (480px)*/
+
+@media (max-width: 480px){
+    .banner_img{
+        height: 500px;
+        background-position: center top;
+    }
+    .card{
+        width: 100%;
+    }
+}

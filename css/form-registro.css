@@ -1,0 +1,16 @@
+.custom-file-input{
+    display: none;
+}
+label[for="icon"]{
+    margin-top: 10px;
+    display: block;
+    background-color: rgb(28, 87, 197);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: rgb(7, 64, 170);
+    }
+} 

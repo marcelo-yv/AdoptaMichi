@@ -1,0 +1,17 @@
+.form-buttons-login{
+    align-self: center;
+}
+
+.form-buttons-login a{
+    margin-right: 15px;
+}
+
+
+@media (max-width: 768px){
+    .form-buttons-login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
